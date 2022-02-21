@@ -1,0 +1,74 @@
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Login e cadastro</title>
+        <link rel="stylesheet" href="../css/estilo-log in.css">
+    </head>
+    <body>
+        <div class="section">  
+            <div class="container">  
+             <div class="row full-height justify-content-center">  
+              <div class="col-12 text-center align-self-center py-5">  
+               <div class="section pb-5 pt-5 pt-sm-2 text-center">  
+                <h6 class="mb-0 pb-3"><span>Login </span><span>Cadastro</span></h6>  
+                   <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>  
+                   <label for="reg-log"></label>  
+                <div class="card-3d-wrap mx-auto">  
+                 <div class="card-3d-wrapper">  
+                  <div class="card-front">  
+                   <div class="center-wrap">  
+                    <div class="section text-center">  
+                     <h4 class="mb-4 pb-3">Login</h4> 
+                      <form action="../index.php" method="post" target="_parent" autocomplete="off">
+                        <div class="form-group">  
+                          <div>
+                              <input type="email" name="logemail" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+                          </div>
+                        </div>       
+                        <div class="form-group mt-2">  
+                            <div>
+                              <input type="password" name="logsenha" class="form-style" placeholder="Senha" id="logpass" autocomplete="off">
+                            </div>
+                        </div>  
+                        <button type="submit" class="btn mt-4">Entrar</button>  
+                      </form> 
+                            <p class="mb-0 mt-4 text-center"><a href="../esqueciSenha.php" class="link">Esqueci minha senha</a></p>  
+                      </div>  
+                     </div>  
+                    </div>  
+                  <div class="card-back">  
+                   <div class="center-wrap">  
+                    <div class="section text-center">  
+                     <h4 class="mb-4 pb-3">Cadastro</h4> 
+                        <form action="cad_usuario.php" method="post" target="_parent" autocomplete="off">
+                          <div class="form-group">  
+                            <div>
+                              <input type="text" name="cadnome" class="form-style" placeholder="Nome de usuário" id="logname" autocomplete="off">
+                            </div>
+                            </div>       
+                          <div class="form-group mt-2">  
+                            <div>
+                              <input type="email" name="cademail" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+                            </div>
+                          </div>       
+                          <div class="form-group mt-2">  
+                            <div>
+                              <input type="password" name="cadsenha" class="form-style" placeholder="Senha" id="logpass" autocomplete="off"> 
+                            </div>
+                          </div>  
+                          <button type="submit" class="btn mt-4">Entrar</button>  
+                        </form>
+                      </div>  
+                     </div>  
+                    </div>  
+                   </div>  
+                  </div>  
+                 </div>  
+                </div>  
+               </div>  
+             </div>  
+           </div>  
+    </body>
+</html>
