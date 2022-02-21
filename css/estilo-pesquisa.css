@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Zen Antique', serif;
+}
+.conteúdo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 80%;
+}
+.caixa{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#search{
+    height: 35px;
+    border: none;
+    outline: transparent;
+    background: white;
+    border-radius: 0 10px 10px 0;
+    padding: 0.3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .7s;
+}
+#search:hover {
+    background-image: linear-gradient(to bottom right, #ff416c, #ff4b2b, #f59426);
+}
+input{
+    background: white;
+    height: 35px;
+    width: 80%;
+    color: rgb(20,19,19);
+    border: none;
+    outline: none;
+    padding-left: 0.8em;
+    border-radius: 10px 0 0 10px;
+    transition: all .4s;
+}
+
+input:focus::placeholder{
+    color:  black;
+}
+.radio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.radio input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.radio input + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: smaller;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.radio input[type=radio] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1px #ff416c;
+    vertical-align: bottom;
+}
+
+  .radio input[type=radio]:checked + label::after {
+    content: '';
+    background-color: #ff4b2b;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+#warning{
+    color: white;
+}
+#tituloLivro{
+    color: Black;
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+}
+h4{
+    margin: 5px;
+}

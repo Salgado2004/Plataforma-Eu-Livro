@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+.swiper-container { 
+  position: relative;
+  width: 100%;
+  display: flex;  
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+ }  
+ .swiper-wrapper {  
+  width: 80%;  
+  height: 100%;  
+  display: flex;  
+  align-items: center;    
+  position: relative; 
+}  
+.slider-item {   
+  width: 100%; 
+  display: flex;  
+  flex-direction: column; 
+  flex-shrink: 0;
+  visibility:hidden;
+  background: rgb(19, 19, 20);
+}  
+.slider-item-content {  
+    margin: 10px;  
+    display: flex;  
+    flex-direction: row;  
+    transition: 0.4s; 
+    visibility: hidden;
+    transform: translatex(500px);  
+}   
+.swiper-slide-active .slider-item-content{  
+    visibility: visible;
+    transform: translatex(0px);  
+} 
+.swiper-button-next, .swiper-button-prev {  
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  height: 245px; 
+  width: 55px; 
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  z-index: 1;
+  transition: 0.4s;
+  background: black; 
+}
+.swiper-button-next{
+  right: 10px;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover { 
+  background-color: #5f5c5c; 
+}
+ .border {  
+  height: 235px;  
+  width: 170px;
+  background: transparent;  
+  border-radius: 10px;  
+  transition: border 1s;  
+  position: relative;  
+  overflow-y: scroll;
+  overflow-x: hidden;
+ }  
+ .border::-webkit-scrollbar{
+  width: 5px;
+}
+.border::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+.border::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 20px;
+  border: transparent;
+}
+ .border:hover {  
+  border: 1px solid #fff;  
+ }  
+ .card {  
+  height: 245px;  
+  width: 180px;  
+  margin-left: 10px;
+  border-radius: 10px;  
+  transition: background 0.8s;  
+  overflow: hidden;   
+  box-shadow: 0 70px 63px -60px #ff416d65;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  position: relative;  
+ }  
+ .card:hover p {  
+  opacity: 1;  
+ } 
+ .card1 {  
+  background: url("../img/img-perfis/img1.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card1:hover {  
+  background: url("../img/img-perfis/img1.png") left center no-repeat;  
+  background-size: 400px;  
+ }  
+ .card2 {  
+  background: url("../img/img-perfis/img2.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card2:hover {  
+  background: url("../img/img-perfis/img2.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card3 {  
+  background: url("../img/img-perfis/img3.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card3:hover {  
+  background: url("../img/img-perfis/img3.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card4 {  
+  background: url("../img/img-perfis/img4.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card4:hover {  
+  background: url("../img/img-perfis/img4.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card5 {  
+  background: url("../img/img-perfis/img5.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card5:hover {  
+  background: url("../img/img-perfis/img5.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card6 {  
+  background: url("../img/img-perfis/img6.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card6:hover {  
+  background: url("../img/img-perfis/img6.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card7 {  
+  background: url("../img/img-perfis/img7.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card7:hover {  
+  background: url("../img/img-perfis/img7.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card8 {  
+  background: url("../img/img-perfis/img8.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card8:hover {  
+  background: url("../img/img-perfis/img8.png") left center no-repeat;  
+  background-size: 400px;  
+ }  
+ .card9 {  
+  background: url("../img/img-perfis/img9.png") center center no-repeat;  
+  background-size: 200px;  
+ }  
+ .card9:hover {  
+  background: url("../img/img-perfis/img9.png") left center no-repeat;  
+  background-size: 400px;  
+ } 
+ .card10 {  
+  background: white; 
+ } 
+ h3 {  
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+  color: #fff;  
+  margin: 20px;  
+  opacity: 1; 
+ }  
+ p {  
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  opacity: 0; 
+  margin-left: 10px;
+  transition: opacity 1s; 
+  color: #fff;   
+  cursor: pointer;
+ }
+ a{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  color: #fff;  
+  text-decoration: none;
+ }
+ a:hover{
+   text-decoration: underline;
+ }
+ .icons {  
+  position: absolute; 
+  height: 65px;  
+  top: 150px;  
+  width: 150px;   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;  
+  font-weight: bold;
+ }  
+ #avaliacao{
+  color: black; 
+  text-decoration: underline;
+  font-family: 'Zen Antique', serif;
+ }
+ #avaliacao:hover{
+  background-image: linear-gradient(to bottom right, #ff416c, #ff4b2b, #f59426);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+ }
